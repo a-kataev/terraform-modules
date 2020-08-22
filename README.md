@@ -8,6 +8,7 @@ Used terraform modules.
 
 * [digitalocean](digitalocean/README.md)
 * [docker](docker/README.md)
+* [gitlab-runner](gitlab-runner/README.md)
 
 ## Usage
 
