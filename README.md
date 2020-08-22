@@ -7,6 +7,7 @@ Used terraform modules.
 ## Modules
 
 * [digitalocean](digitalocean/README.md)
+* [docker](docker/README.md)
 
 ## Usage
 
