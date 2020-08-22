@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 os_id=$(lsb_release -is | tr '[:upper:]' '[:lower:]')
 os_codename=$(lsb_release -cs)
 

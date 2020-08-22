@@ -24,7 +24,16 @@ resource "null_resource" "docker" {
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/${local.script_name}",
+    ]
+  }
+  provisioner "remote-exec" {
+    inline = [
       "/tmp/${local.script_name}",
+    ]
+    on_failure = fail
+  }
+  provisioner "remote-exec" {
+    inline = [
       "rm -rf /tmp/${local.script_name}",
     ]
   }
