@@ -1,4 +1,4 @@
-# tf-modules/gitlab-runner
+# terraform-modules/gitlab-runner
 
 ## Overview
 
@@ -18,7 +18,7 @@ data "local_file" "ssh_key_private" {
 }
 
 module "gitlab-runner" {
-  source = "git::https://github.com/a-kataev/tf-modules.git//gitlab-runner"
+  source = "git::https://github.com/a-kataev/terraform-modules.git//gitlab-runner"
   connection_hosts = ["111.122.133.144"]
   connection_private_key = data.local_file.ssh_key_private.content
   registration_token = ""

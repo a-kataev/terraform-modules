@@ -1,4 +1,4 @@
-# tf-modules/digitalocean
+# terraform-modules/digitalocean
 
 ## Overview
 
@@ -20,7 +20,7 @@ Use this module in your tf file:
 
 ```hcl
 module "do" {
-  source = "git::https://github.com/a-kataev/tf-modules.git//digitalocean"
+  source = "git::https://github.com/a-kataev/terraform-modules.git//digitalocean"
   resource_prefix = "new"
   droplet_count = 1
   droplet_region = "fra1"

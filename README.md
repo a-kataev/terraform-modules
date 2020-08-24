@@ -1,4 +1,4 @@
-# tf-modules
+# terraform-modules
 
 ## Overview
 
@@ -16,7 +16,7 @@ Used terraform modules.
 
 ```hcl
 module "do" {
-  source = "git::https://github.com/a-kataev/tf-modules.git//digitalocean"
+  source = "git::https://github.com/a-kataev/terraform-modules.git//digitalocean"
 }
 ```
 
@@ -25,7 +25,7 @@ module "do" {
 Clone this repository to directory `modules`:
 
 ```shell
-$ git clone git@github.com:a-kataev/tf-modules ./modules
+$ git clone git@github.com:a-kataev/terraform-modules ./modules
 ```
 
 Use local path in module source:

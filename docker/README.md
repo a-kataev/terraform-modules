@@ -1,4 +1,4 @@
-# tf-modules/docker
+# terraform-modules/docker
 
 ## Overview
 
@@ -18,7 +18,7 @@ data "local_file" "ssh_key_private" {
 }
 
 module "docker" {
-  source = "git::https://github.com/a-kataev/tf-modules.git//docker"
+  source = "git::https://github.com/a-kataev/terraform-modules.git//docker"
   connection_hosts = ["111.122.133.144"]
   connection_private_key = data.local_file.ssh_key_private.content
 }
