@@ -6,6 +6,7 @@ data "template_file" "script" {
   template = file("${path.module}/${local.script_name}")
   vars = {
     registration_token = var.registration_token
+    tag_list = join(",", var.tag_list)
   }
 }
 

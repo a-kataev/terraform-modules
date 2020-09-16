@@ -12,3 +12,8 @@ variable "registration_token" {
   type = string
   default = ""
 }
+
+variable "tag_list" {
+  type = list(string)
+  default = []
+}

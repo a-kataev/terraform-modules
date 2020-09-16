@@ -24,6 +24,7 @@ gitlab-runner register \
   --non-interactive \
   --url "https://gitlab.com" \
   --registration-token "${registration_token}" \
+  --tag-list "${tag_list}" \
   --executor "docker" \
   --docker-image "docker:stable" \
   --docker-volumes "/var/run/docker.sock:/var/run/docker.sock"

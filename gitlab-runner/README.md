@@ -22,6 +22,7 @@ module "gitlab-runner" {
   connection_hosts = ["111.122.133.144"]
   connection_private_key = data.local_file.ssh_key_private.content
   registration_token = ""
+  tag_list = ["docker", "seflhost"]
 }
 ```
 
